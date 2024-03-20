@@ -1,19 +1,21 @@
-export function registerController(registerform) {
+import { createUser } from "./register-model";
+
+export function registerController(registerForm) {
 
     // Evento que escucha al submit
-    registerform.addEventListener('submit', (event) => {
+    registerForm.addEventListener('submit', (event) => {
         event.preventDefault(); // Evitamos la validacion del formulario
     });
 
     // Funcion para manejar el envio del formulario de registro
-    function handleRegisterFormSubmit(registerform) {
+    function handleRegisterFormSubmit(registerForm) {
         let error = [];
 
         // Verificar si el correo electronico es valido
-        if (correctEmail(registerform)) {
+        if (correctEmail(registerForm)) {
             // Verificar si las contraseñas son iguales
-            if (correctPassword(registerform)) {
-                registerUser(registerform); // Crear usuario si todo es válido
+            if (correctPassword(registerForm)) {
+                registerUser(registerForm); // Crear usuario si todo es válido
             } else {
                 error.push('Las contraseñas no coinciden');
             }
@@ -29,32 +31,33 @@ export function registerController(registerform) {
     }
 
     // Funcion para verificar si el correo electronico es valido
-    function correctEmail(registerform) {
-        const email = registerform.querySelector('#email');
+    function correctEmail(registerForm) {
+        const email = registerForm.querySelector('#email');
         const emailRegExp = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+        
 
         return emailRegExp.test(email.value); // Evaluamos que sea correcto
     }
 
     // Funcion para verificar si las contraseñas son iguales
-    function correctPassword(registerform) {
-        const password = registerform.querySelector('#password');
-        const passwordConfirmation = registerform.querySelector('#confirm-password');
+    function correctPassword(registerForm) {
+        const password = registerForm.querySelector('#password');
+        const passwordConfirmation = registerForm.querySelector('#confirm-password');
 
         return password.value === passwordConfirmation.value;
     }
 
     // Funcion para crear usuario
-    async function registerUser(registerform) {
-        const email = registerform.querySelector('#email');
-        const password = registerform.querySelector('#password');
+    async function registerUser(registerForm) {
+        const email = registerForm.querySelector('#email');
+        const password = registerForm.querySelector('#password');
 
         try {
             await createUser(email.value, password.value);
             dispatchEvent('register-notification', {
                 message: 'Te has registrado correctamente',
                 type: 'success'
-            }, signupForm);
+            }, registerForm);
 
             // Redirigir después de un breve retraso
             setTimeout(() => {
@@ -64,7 +67,7 @@ export function registerController(registerform) {
             dispatchEvent('register-notification', {
                 message: error,
                 type: 'error'
-            }, signupForm);
+            }, registerForm);
         }
     }
 }

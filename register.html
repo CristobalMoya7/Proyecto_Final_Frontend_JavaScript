@@ -12,9 +12,9 @@
 
     <p></p> <!-- Quitar el espacio, hacerlo con css -->
 
-    <form action="register-form"></form>
-        <label for="text">Email</label>
-        <input type="text" id="Email" required>
+    <form id="register-form">
+        <label for="email">Email</label>
+        <input type="text" id="email" required> 
 
         <label for="password">Contraseña</label>
         <input type="password" id="password" required minlength="5">
@@ -23,5 +23,8 @@
         <input type="password" id="confirm-password" required minlength="5">
 
         <button type="submit">Crear usuario</button>
+    </form>
+
+    <script type="module" src="register.js"></script>
 </body>
 </html>
