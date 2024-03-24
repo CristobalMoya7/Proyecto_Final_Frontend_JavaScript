@@ -1,0 +1,154 @@
+:root {
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    color: #616668; 
+}
+
+body {
+    background-color: #616668;
+}
+
+.dark-background-text h3,
+.dark-background-text p {
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    color: #616668;
+}
+
+form {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #97c4ad;
+    border-radius: 5px;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 1rem;
+    align-items: center;
+}
+
+form input {
+    width: 60%;
+    border-radius: 5px;
+}
+
+form button {
+    width: 50%;
+    background-color: #d78295;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    transition: background-color 0.4s ease;
+}
+
+form button:hover {
+    background: #97c4ad;  
+    cursor: pointer;
+}
+
+.field-error {
+    border: 2px solid red;
+}
+
+header {
+    background-color: #87eed8;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.832);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    width: 100%;
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li button,
+nav ul li a {
+    display: inline-block;
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 0.2rem;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+nav ul li button:hover,
+nav ul li a:hover {
+    background: rgb(0, 0, 0);
+    color: #d78295; 
+    cursor: pointer;
+}
+
+nav ul li button {
+    padding: 0.4rem;
+}
+
+#session {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    width: 30%;
+    padding: 0;
+    padding-right: 70%;
+    margin: 0;
+    gap: 10px;
+}
+
+.buttons-container button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000000; 
+    border-radius: 5px;
+    color: #000000; 
+    padding: 0.3rem;
+    margin-top: 0;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.buttons-container button:hover {
+    background-color: #d78295; 
+    border: 1px solid #d81e5b; 
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 0.3rem;
+    margin-top: 0;
+}

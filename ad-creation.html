@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notifications/style.css">
+    <link rel="stylesheet" href="spinner/style.css">
+    <link rel="stylesheet" href="commons.css">
+    <link rel="stylesheet" href="ad-creation/style.css">
+
+    <title>Publish your article here!</title>
+</head>
+
+<body>
+    <header>
+        <nav id="session"></nav>
+    </header>
+    <section class="notification"></section>
+    <form id="insertAd" novalidate>
+        <div class="buttons-container">
+            <button id="goBack">Back</button>
+        </div>
+        <h2>Publish your ad here!</h2>
+        <section id="spinner"></section>
+
+        <label for="name">Give a name to your product</label>
+        <input type="text" name="name" id="name" placeholder="Mobile - brand- model..." required>
+
+        <label for="price">Enter your price in €</label>
+        <input type="number" name="price" id="price" placeholder="20" required>
+
+        <div class="radio-container">
+            <div>
+                <span> <label for="onSale">Want to sell</label></span>
+                <span><input type="radio" name="typeOfOffer" id="onSale" required></span>
+            </div>
+
+            <div>
+                <span><label for="onSearch">Want to buy</label></span>
+                <span><input type="radio" name="typeOfOffer" id="onSearch" required></span>
+            </div>
+
+        </div>
+
+        <label for="description">Product's description</label>
+        <textarea name="description" id="description" cols="30" rows="10" maxlength="140"
+            placeholder="Write a short description of the product. 140 chars max." required></textarea>
+
+
+        <label for="image">Enter the URL of your image</label>
+        <input type="url" name="image" id="image" placeholder="https//... png">
+
+
+        <label for="category">Tag your product</label>
+        <input type="text" name="category" id="category"
+            placeholder="Enter comma separated tags from 'lifestyle', 'work', 'motor', 'mobile'">
+
+        <button type="submit">Insert ad</button>
+    </form>
+    <script type="module" src="ad-creation.js"></script>
+</body>
+
+</html>

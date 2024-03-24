@@ -1,0 +1,81 @@
+{
+    "ads": [
+        {
+            "name": "Toyota Corolla",
+            "sale": true,
+            "price": 15000,
+            "description": "A reliable car known for its fuel efficiency and durability.",
+            "image": "https://cdn.drivek.com/configurator-imgs/cars/es/800/TOYOTA/COROLLA/41517_WAGON-5-DOORS/toyota-corolla-wagon-front-view.jpg",
+            "tags": "car, Toyota",
+            "userId": 1,
+            "id": 1
+        },
+        {
+            "name": "Honda Civic",
+            "sale": true,
+            "price": 18000,
+            "description": "A popular compact car with a sporty design and excellent fuel economy.",
+            "image": "https://img.remediosdigitales.com/23eb02/2560_3000/1366_2000.jpg",
+            "tags": "car, Honda",
+            "userId": 2,
+            "id": 2
+        },
+        {
+            "name": "BMW 3 Series",
+            "sale": true,
+            "price": 35000,
+            "description": "Luxury sedan with powerful performance and advanced technology features.",
+            "image": "https://images.coches.com/_vn_/bmw/Serie-3/1f1b2ba8731617c04decf13215d20e83.jpg",
+            "tags": "car, BMW",
+            "userId": 3,
+            "id": 3
+        },
+        {
+            "name": "Ford Mustang",
+            "sale": true,
+            "price": 45000,
+            "description": "Iconic muscle car with a powerful engine and stylish design.",
+            "image": "https://images.prismic.io/carwow/d1a610bb-fdae-4dc5-9bbd-7af0e18d4d90_LHD+Ford+Mustang+Mach+1+2021+Exterior-07.jpg",
+            "tags": "car, Ford",
+            "userId": 4,
+            "id": 4
+        },
+        {
+            "name": "Tesla Model S",
+            "sale": true,
+            "price": 80000,
+            "description": "Electric luxury sedan with cutting-edge technology and impressive performance.",
+            "image": "https://cdn.drivek.com/configurator-imgs/cars/es/Original/TESLA/MODEL-S/40637_HATCHBACK-5-DOORS/tesla-model-s-2021-font-side-1.jpg",
+            "tags": "car, Tesla",
+            "userId": 5,
+            "id": 5
+        }
+    ],
+    "users": [
+        {
+            "username": "alice@example.com",
+            "password": "hashed_password_1",
+            "id": 1
+        },
+        {
+            "username": "bob@example.com",
+            "password": "hashed_password_2",
+            "id": 2
+        },
+        {
+            "username": "charlie@example.com",
+            "password": "hashed_password_3",
+            "id": 3
+        },
+        {
+            "username": "dave@example.com",
+            "password": "hashed_password_4",
+            "id": 4
+        },
+        {
+            "username": "eve@example.com",
+            "password": "hashed_password_5",
+            "id": 5
+        }
+    ]
+}

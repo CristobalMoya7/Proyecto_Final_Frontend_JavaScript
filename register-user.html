@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="commons.css">
+    <link rel="stylesheet" href="spinner/style.css">
+    <link rel="stylesheet" href="notifications/style.css">
+    <link rel="stylesheet" href="register-user/style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <nav id="session"></nav>
+    </header>
+    <section class="notification"></section>
+    <form id="registerForm" novalidate>
+        <div class="buttons-container">
+            <button id="goBack">Back</button>
+        </div>
+        <h2>Signup Form</h2>
+        <section id="spinner"></section>
+        <label for="email">Email *</label>
+        <input type="text" id="email" required>
+
+        <label for="password">Choose password *</label>
+        <input type="password" id="password" required minlength="6">
+
+        <label for="passwordCheck">Confirm password *</label>
+        <input type="password" id="passwordCheck" required minlength="6">
+
+        <button type="submit">Register user</button>
+    </form>
+
+    <script type="module" src="register-user.js"></script>
+
+</body>
+
+</html>

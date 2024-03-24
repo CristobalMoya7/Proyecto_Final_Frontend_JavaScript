@@ -1,0 +1,41 @@
+.ad {
+    border: solid 1px #97c4ad;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.ad-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.ads-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.ads-panel ul {
+    list-style: none;
+    width: 100%;
+}
+
+.ad img {
+    border-radius: 50%;
+    border: solid 1px #616668; 
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}

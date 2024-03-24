@@ -1,0 +1,19 @@
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 5px;
+    padding: .5rem;
+    width: 40%;
+    text-align: center;
+}
+
+.notification.success {
+    background-color: #97c4ad; 
+}
+
+.notification.error {
+    background-color: #d78295; 
+}
